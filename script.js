@@ -13,6 +13,8 @@ const buttonRandomColor = document.createElement("button");
 const buttonGrayScale = document.createElement("button");
 const divSizeGrid = document.createElement("div");
 const labelColor = document.createElement("label");
+const labelSize = document.createElement("label");
+
 const myColor = document.createElement("input");
 
 buttonClean.textContent = "Clean";
@@ -20,17 +22,20 @@ buttonRandomColor.textContent = "Enable Random Color";
 buttonGrayScale.textContent = "Enable Gray Scale";
 divSizeGrid.textContent = size + " x " + size;
 labelColor.textContent = "Select Color:  "
+labelSize.textContent = "Select Size:  "
+
 
 gridSize.classList = "size";
 divSizeGrid.classList = "size-grid";
 labelColor.classList = "label-color";
+labelSize.classList = "label-color";
 myColor.classList = "myColor";
 myColor.type = "color";
 
 
 
 
-
+menu.insertBefore(labelSize,gridSize);
 menu.appendChild(divSizeGrid);
 menu.appendChild(labelColor);
 menu.appendChild(buttonClean);

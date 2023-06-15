@@ -44,14 +44,19 @@ body {
   background: rgb(255, 255, 255);
   border: 0.5px solid rgba(170, 168, 168, 0.247);
 }
+
 .label-color{
+  color: white;
+  font-family: Georgia, serif;
   display: flex;
   align-items: center;
 }
 
 .myColor{
   border-radius: 50%;
-  padding: 2%;
+  width: 50%;
+  padding: 3%;
+  margin: 0.02%;
 }
 
 .myColor,.size,button{
